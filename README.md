@@ -17,8 +17,7 @@
 7. [Enlace a figma de la interfaz](#figma)
 8. [Conclusión](#conclusión)
 9. [Agradecimientos](#agradecimientos)
-10. [Licencias](#licencias)
-11. [Contacto](#contacto)
+10. [Contacto](#contacto)
 
 ---------------------------------
 
