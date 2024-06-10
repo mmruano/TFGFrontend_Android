@@ -104,6 +104,27 @@ public class RefugeRegisterFragment extends Fragment {
         return cif.matches(cifPattern);
     }
 
+    private boolean validarTelefono(String telefono) {
+        // Expresión regular para validar el teléfono
+        String telefonoPattern = "^[0-9]{9}$";
+
+        // Validar el teléfono utilizando la expresión regular
+        return telefono.matches(telefonoPattern);
+    }
+
+    private boolean validarCodigoPostal(String codigoPostal) {
+        // Expresión regular para validar el código postal
+        String codigoPostalPattern = "^[0-9]{5}$";
+
+        // Validar el código postal utilizando la expresión regular
+        return codigoPostal.matches(codigoPostalPattern);
+    }
+
+    private boolean validarContrasena(String contrasena) {
+        // Validar que la contraseña tenga al menos 6 caracteres y contenga al menos una letra
+        return contrasena.length() >= 6 && contrasena.matches(".*[a-zA-Z]+.*");
+    }
+
     private void createRefuge() {
         String name = nameEditText.getText().toString();
         String email = emailEditText.getText().toString();
@@ -135,6 +156,24 @@ public class RefugeRegisterFragment extends Fragment {
         // Validar que el correo electrónico contiene un '@'
         if (!email.contains("@") || email.contains(" ")) {
             Toast.makeText(requireContext(), "Por favor, introduzca un correo electrónico válido.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Validar el teléfono
+        if (!validarTelefono(phone)) {
+            Toast.makeText(requireContext(), "Por favor, introduzca un teléfono válido (9 dígitos).", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Validar el código postal
+        if (!validarCodigoPostal(postalCode)) {
+            Toast.makeText(requireContext(), "Por favor, introduzca un código postal válido (5 dígitos).", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Validar la contraseña
+        if (!validarContrasena(password)) {
+            Toast.makeText(requireContext(), "La contraseña debe tener al menos 6 caracteres y contener al menos una letra.", Toast.LENGTH_SHORT).show();
             return;
         }
 

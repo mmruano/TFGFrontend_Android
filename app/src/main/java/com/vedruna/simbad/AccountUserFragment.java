@@ -114,6 +114,22 @@ public class AccountUserFragment extends Fragment {
         fragmentManager.popBackStack();
     }
 
+    private boolean validarCodigoPostal(String codigoPostal) {
+        // Expresión regular para validar el código postal
+        String codigoPostalPattern = "^[0-9]{5}$";
+
+        // Validar el código postal utilizando la expresión regular
+        return codigoPostal.matches(codigoPostalPattern);
+    }
+
+    private boolean validarTelefono(String telefono) {
+        // Expresión regular para validar el teléfono
+        String telefonoPattern = "^[0-9]{9}$";
+
+        // Validar el teléfono utilizando la expresión regular
+        return telefono.matches(telefonoPattern);
+    }
+
     private void editUser(String name, String surname, String gender, String province,
                           String codPost, String phone) {
         // Obtener el token de SharedPreferences
@@ -122,6 +138,18 @@ public class AccountUserFragment extends Fragment {
 
         if (token.isEmpty()) {
             Toast.makeText(requireContext(), "No se pudo obtener el token", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Validar el código postal
+        if (!validarCodigoPostal(codPost)) {
+            Toast.makeText(requireContext(), "Por favor, introduzca un código postal válido (5 dígitos).", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Validar el teléfono
+        if (!validarTelefono(phone)) {
+            Toast.makeText(requireContext(), "Por favor, introduzca un teléfono válido (9 dígitos).", Toast.LENGTH_SHORT).show();
             return;
         }
 

@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -112,6 +113,8 @@ public class AnimalInfoUserFragment extends Fragment {
                 animalInfoRefugeProvinceUser.setText(animalDTO.getRefugeProvince());
                 animalInfoRefugePhoneUser.setText(animalDTO.getRefugePhone());
                 animalInfoRefugePostCodeUser.setText(animalDTO.getRefugeCodePost());
+
+                String imageUrl = Constans.BASE_URL + animalDTO.getPhoto();
 
                 // Cargar la imagen usando Glide
                 Glide.with(this)

@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/animal_list_refuge"
-        android:icon="@drawable/ic_account"
+        android:icon="@drawable/ic_search"
         app:showAsAction="ifRoom"
         tools:ignore="MenuTitle" />
     <item
