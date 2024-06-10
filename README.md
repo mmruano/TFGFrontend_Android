@@ -201,10 +201,6 @@ Cuando hayas terminado de usar la aplicación, puedes cerrar sesión fácilmente
 
 ---------------------------------
 
-## Documentación
-
----------------------------------
-
 ## Figma
 
 https://www.figma.com/design/dJrNwrjCegRQ6uRQK4F03E/Simbad?node-id=1-2&t=tFolHPhYNd93cXw1-1
