@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pistachio"
+    android:fillViewport="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context=".AccountUserFragment">
+
+        <View
+            android:id="@+id/backgroud_white"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:background="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/goBackAccountEditUserButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="goBackAccountEditUser"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white" />
+
+        <TextView
+            android:id="@+id/userEditText1"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Mi perfil:"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.366"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/goBackAccountEditUserButton" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/userEditText1" />
+
+        <TextView
+            android:id="@+id/userEditText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Nombre:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/userEditText1" />
+
+        <EditText
+            android:id="@+id/name_edit_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/userEditText2"
+            app:layout_constraintVertical_bias="0.17" />
+
+        <TextView
+            android:id="@+id/userEditText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Apellidos:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/name_edit_user" />
+
+        <EditText
+            android:id="@+id/surname_edit_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="Apellidos"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/userEditText3"
+            app:layout_constraintVertical_bias="0.255" />
+
+        <TextView
+            android:id="@+id/userEditText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Sexo:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/surname_edit_user" />
+
+        <Spinner
+            android:id="@+id/spinner_edit_user_gender"
+            android:layout_width="289dp"
+            android:layout_height="42dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.317"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/userEditText4"
+            app:layout_constraintVertical_bias="0.341" />
+
+        <TextView
+            android:id="@+id/userEditText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Provincia:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_edit_user_gender" />
+
+        <Spinner
+            android:id="@+id/spinner_edit_user_province"
+            android:layout_width="289dp"
+            android:layout_height="42dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.317"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/userEditText5"
+            app:layout_constraintVertical_bias="0.42" />
+
+        <TextView
+            android:id="@+id/userEditText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Código postal:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_edit_user_province" />
+
+        <EditText
+            android:id="@+id/codPost_edit_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="Código postal"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/userEditText6"
+            app:layout_constraintVertical_bias="0.504" />
+
+        <TextView
+            android:id="@+id/userEditText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Teléfono:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/codPost_edit_user" />
+
+        <EditText
+            android:id="@+id/phone_edit_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/userEditText8"
+            app:layout_constraintVertical_bias="0.668" />
+
+        <Button
+            android:id="@+id/editUserButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="editUser"
+            android:text="Guardar cambios"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/phone_edit_user" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pistachio"
+    android:fillViewport="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context=".AnimalInfoUserFragment">
+
+        <View
+            android:id="@+id/backgroud_white"
+            android:layout_width="match_parent"
+            android:layout_height="1220dp"
+            android:background="@drawable/popup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/goBackAdoptionInfoUserButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white" />
+
+        <ImageView
+            android:id="@+id/adoptionAnimalInfoImageViewUser"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="72dp"
+            android:background="@color/emerald"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalNameInfoUser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoImageViewUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalProvinceInfoUser"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web"
+            android:text="Ciudad"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.193"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalNameInfoUser" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalProvinceInfoUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalGenderInfoUser"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Sexo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoTextUser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Sexo"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalGenderInfoUser"
+            app:layout_constraintVertical_bias="0.432" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalSizeInfoUser"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Tamaño"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.667"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoTextUser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Tamaño"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalSizeInfoUser" />
+
+        <TextView
+            android:id="@+id/adoptionAgeInfoUser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Edad"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoTextUser2" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalBirtdateInfoUser"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="01 - 01 - 2020"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAgeInfoUser"
+            app:layout_constraintVertical_bias="0.489" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalEnergyLevelInfoUser"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Media"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoTextUser2" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoTextUser3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Nivel de energía"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalEnergyLevelInfoUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalSpeciesInfoUser"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Especie"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalBirtdateInfoUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoTextUser4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Especie"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalSpeciesInfoUser"
+            app:layout_constraintVertical_bias="0.547" />
+
+        <TextView
+            android:id="@+id/adoptionAntryDateInfoUser"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/istok_web"
+            android:text="1010-10-10"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.64"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoTextUser3" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoTextUser5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Fecha de entrada"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.722"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAntryDateInfoUser" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoTextUser5" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoTextUser6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Salud:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalHealthInfoUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Salud"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoTextUser6"
+            app:layout_constraintVertical_bias="0.63" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalHealthInfoUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoTextUser7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Descripción:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalDescriptionInfoUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Descripción"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoTextUser7"
+            app:layout_constraintVertical_bias="0.722" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalDescriptionInfoUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoRefugeNameUser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Nombre del refugio"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoRefugeStreetUser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Calle"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoRefugeNameUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoRefugeEmailUser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoRefugePostCodeUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoRefugeProvinceUser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/istok_web"
+            android:text="Provincia"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoRefugeStreetUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnfoRefugePhoneUser"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/istok_web"
+            android:text="+0123456789"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoRefugeEmailUser" />
+
+        <TextView
+            android:id="@+id/adoptionAnimalInfoRefugePostCodeUser"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/istok_web"
+            android:text="12345"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/adoptionAnimalInfoRefugeProvinceUser" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

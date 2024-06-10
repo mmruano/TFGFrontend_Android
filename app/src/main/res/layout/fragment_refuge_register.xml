@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pistachio"
+    android:fillViewport="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context=".RefugeRegisterFragment">
+
+        <View
+            android:id="@+id/backgroud_white"
+            android:layout_width="match_parent"
+            android:layout_height="980dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/goBackRegisterRefugeButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="goBackRegisterRefuge"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText1"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Darse de alta como refugio:"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.366"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.109" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Nombre del refugio:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.146"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.139" />
+
+        <EditText
+            android:id="@+id/name_refuge_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="Nombre del refugio"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.174" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Email:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.227" />
+
+        <EditText
+            android:id="@+id/email_register_refuge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.263" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Tipo de refugio:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.314" />
+
+        <Spinner
+            android:id="@+id/spinner_register_refuge_type_refuge"
+            android:layout_width="289dp"
+            android:layout_height="42dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.317"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.349" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="CIF:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.392" />
+
+        <EditText
+            android:id="@+id/cif_register_refuge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="CIF"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.432" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Provincia"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.475" />
+
+        <Spinner
+            android:id="@+id/spinner_register_province_refuge"
+            android:layout_width="294dp"
+            android:layout_height="38dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.337"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.511" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Calle"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <EditText
+            android:id="@+id/street_register_refuge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="Calle"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.593" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Código Postal:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.646" />
+
+        <EditText
+            android:id="@+id/post_address_register_refuge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.689" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Teléfono:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.74" />
+
+        <EditText
+            android:id="@+id/phone_register_refuge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.308"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.795" />
+
+        <TextView
+            android:id="@+id/refugeRegisterText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="807dp"
+            android:layout_marginBottom="144dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Contraseña:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/password_register_refuge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="845dp"
+            android:layout_marginBottom="88dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/createRefugeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="createRefuge"
+            android:text="Crear cuenta"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroud_white"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white"
+            app:layout_constraintVertical_bias="0.977" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

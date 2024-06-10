@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pistachio"
+    android:fitsSystemWindows="true"
+    tools:context=".RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <View
+            android:id="@+id/backgroud_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="goBack"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white" />
+
+        <TextView
+            android:id="@+id/registerText1"
+            android:layout_width="248dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="204dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="¿Darse de alta como Usuario o Refugio?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white" />
+
+        <Button
+            android:id="@+id/registerUserButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="navigateToUserRegister"
+            android:text="Usuario"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/registerText1" />
+
+        <Button
+            android:id="@+id/registerRefugeButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="navigateToRefugeRegister"
+            android:text="Refugio"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/registerUserButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/animal_list_user"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"
+        android:title="" />
+    <item
+        android:id="@+id/account_user"
+        android:icon="@drawable/ic_account"
+        app:showAsAction="ifRoom"
+        android:title="" />
+    <item
+        android:id="@+id/list_adoptions_user"
+        app:showAsAction="never"
+        android:title="Lista de adopciones" />
+    <item
+        android:id="@+id/exit"
+        app:showAsAction="never"
+        android:title="Salir de la cuenta" />
+
+</menu>

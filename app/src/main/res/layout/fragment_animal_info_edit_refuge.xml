@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentAnimalInfoEditRefuge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pistachio"
+    android:fillViewport="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context=".AnimalInfoUserFragment">
+
+        <View
+            android:id="@+id/backgroud_white"
+            android:layout_width="match_parent"
+            android:layout_height="1450dp"
+            android:background="#FFFFFF"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/goBackEditAnimalButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="goBackEditAnimal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toTopOf="@+id/backgroud_white" />
+
+        <ImageView
+            android:id="@+id/editAnimalInfoPhotoRefuge"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/emerald"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/goBackEditAnimalButton"
+            tools:src="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/edit_animal_info_name_refuge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoPhotoRefuge" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Nombre"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/edit_animal_info_name_refuge"
+            app:layout_constraintVertical_bias="0.261" />
+
+        <Spinner
+            android:id="@+id/spinner_edit_animal_info_gender_refuge"
+            android:layout_width="289dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.426"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText1" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Sexo"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_edit_animal_info_gender_refuge"
+            app:layout_constraintVertical_bias="0.355" />
+
+        <EditText
+            android:id="@+id/edit_animal_info_age_refuge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:hint="Edad"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.419"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText3" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Edad"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/edit_animal_info_age_refuge" />
+
+        <Spinner
+            android:id="@+id/spinner_edit_animal_info_species_refuge"
+            android:layout_width="289dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText4" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Especie"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_edit_animal_info_species_refuge"
+            app:layout_constraintVertical_bias="0.449" />
+
+        <Spinner
+            android:id="@+id/spinner_edit_animal_info_size_refuge"
+            android:layout_width="289dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText5" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Tamaño"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_edit_animal_info_size_refuge" />
+
+        <Spinner
+            android:id="@+id/spinner_edit_animal_info_energyLevel_refuge"
+            android:layout_width="289dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/istok_web_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText6" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Nivel de energía"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_edit_animal_info_energyLevel_refuge" />
+
+        <EditText
+            android:id="@+id/edit_animal_info_birthDate_refuge"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/editAnimalCalendarPickButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText7" />
+
+        <ImageButton
+            android:id="@+id/editAnimalCalendarPickButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText7"
+            android:background="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Fecha de nacimiento"
+            android:textAlignment="center"
+            android:textColor="@color/pumpkin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/edit_animal_info_birthDate_refuge" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText8" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Salud:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <EditText
+            android:id="@+id/edit_animal_info_health_refuge"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="36dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:gravity="top|start"
+            android:hint="Escribe aquí..."
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText9" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/edit_animal_info_health_refuge" />
+
+        <TextView
+            android:id="@+id/editAnimalInfoRefugeText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/istok_web_bold"
+            android:text="Descripción:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.151"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <EditText
+            android:id="@+id/edit_animal_info_description_refuge"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/istok_web_bold"
+            android:gravity="top|start"
+            android:hint="Escribe aquí..."
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/editAnimalInfoRefugeText10" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/pumpkin"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/edit_animal_info_description_refuge" />
+
+        <Button
+            android:id="@+id/editAnimalInfoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/emerald"
+            android:fontFamily="@font/istok_web_bold"
+            android:onClick="editAnimalInfo"
+            android:text="Guardar cambios"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/backgroud_white"
+            app:layout_constraintStart_toStartOf="@+id/backgroud_white"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
