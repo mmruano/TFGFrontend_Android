@@ -15,9 +15,10 @@
 5. [Guía de uso](#guía_de_uso)
 6. [Enlace a la documentación](#enlace_a_la_documentación)
 7. [Enlace a figma de la interfaz](#enlace_a_figma_de_la_interfaz)
-8. [Agradecimientos](#agradecimientos)
-9. [Licencias](#licencias)
-10. [Contacto](#contacto)
+8. [Conclusión](#conclusión)
+9. [Agradecimientos](#agradecimientos)
+10. [Licencias](#licencias)
+11. [Contacto](#contacto)
 
 ---------------------------------
 
