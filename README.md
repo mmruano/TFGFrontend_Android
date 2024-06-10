@@ -105,6 +105,22 @@ Para lograr estas funcionalidades y asegurar la eficiencia del proyecto, se han 
 
 ---------------------------------
 
+## Diseño de la base de datos
+
+![Captura de pantalla 2024-06-10 205734](https://github.com/mmruano/TFGFrontend_Android/assets/146729468/de1a4623-60ac-4f8d-beb3-3080f541907e)
+
+Relaciones entre Tablas
+
+User y Adoption: Un usuario puede tener múltiples adopciones. La relación se representa a través del atributo userId en la tabla Adoption, que es una clave foránea que apunta a la tabla User.
+
+Animal y Adoption: Un animal puede estar asociado con una adopción. La relación se representa a través del atributo animalId en la tabla Adoption, que es una clave foránea que apunta a la tabla Animal.
+
+Refuge y Animal: Un refugio puede tener múltiples animales. La relación se representa a través del atributo refugeId en la tabla Animal, que es una clave foránea que apunta a la tabla Refuge.
+
+Refuge y Adoption: Un refugio puede estar involucrado en múltiples adopciones. La relación se representa a través del atributo refugeId en la tabla Adoption, que es una clave foránea que apunta a la tabla Refuge.
+
+---------------------------------
+
 ## Instalación
 
 El siguiente enlace te llevará a una pagina de MEGA para poder descargarte el archivo APK de la aplicación.
@@ -198,6 +214,12 @@ Como refugio, tendrás la capacidad de editar la información de tu perfil desde
 17. Salir de la cuenta:
 
 Cuando hayas terminado de usar la aplicación, puedes cerrar sesión fácilmente desde el menú principal. Simplemente haz clic en la opción correspondiente y serás desconectado de tu cuenta, volviendo a la pantalla de inicio de sesión para futuros accesos.
+
+---------------------------------
+
+## Documentación
+
+https://mega.nz/file/9E5AGAZQ#vqr_C9U5TAoYrMcNNwNmR48qGveNFkAUxeCNX_A4oyE
 
 ---------------------------------
 
