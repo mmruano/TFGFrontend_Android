@@ -1,12 +1,28 @@
-Aplicación de adopción de animales - Simbad
+# Aplicación de adopción de animales - Simbad
 
-Trabajo de Fin del Grado Superior (TFG)
-Desarrollo de Aplicaciones de Multiplataformas (DAM)
-María Moragriega Ruano
+**Trabajo de Fin del Grado Superior (TFG)**
+
+**Desarrollo de Aplicaciones de Multiplataformas (DAM)**
+
+**María Moragriega Ruano**
 
 ---------------------------------
 
-Introducción
+## Índice:
+1. [Introducción](#introducción)
+2. [Funcionalidades del proyecto y tecnologías utilizadas](#funcionalidades_del_proyecto_y_tecnologías_utilizadas)
+4. [Guía de instalación](#guía_de_instalación)
+5. [Guía de uso](#guía_de_uso)
+6. [Enlace a la documentación](#enlace_a_la_documentación)
+7. [Enlace a la documentación](#enlace_a_la_documentación)
+8. [Enlace a figma de la interfaz](#enlace_a_figma_de_la_interfaz)
+9. [Agradecimientos](#agradecimientos)
+10. [Licencias](#licencias)
+11. [Contacto](#contacto)
+
+---------------------------------
+
+## Introducción
 
 El Trabajo Fin de Grado (TFG) en Desarrollo de Aplicaciones Multiplataforma (DAM) titulado "Simbad" presenta el desarrollo de una aplicación Android que consume una API de adopciones de animales. La aplicación tiene como objetivo principal facilitar el proceso de adopción de animales a los usuarios interesados, permitiéndoles visualizar la información de los animales disponibles para adopción, así como realizar consultas y filtrar los resultados según diferentes criterios.
 
@@ -18,29 +34,29 @@ En resumen, el TFG presenta el desarrollo de una aplicación móvil para la adop
 
 ---------------------------------
 
-Funcionalidades del proyecto y tecnologías utilizadas.
+## Funcionalidades del proyecto y tecnologías utilizadas
 
 El proyecto consiste en una aplicación Android dedicada a la adopción de animales, diseñada para ofrecer una plataforma intuitiva y funcional tanto para usuarios normales como para refugios de animales. Entre las funcionalidades principales se incluyen la capacidad de los usuarios para buscar y solicitar adopciones de animales, así como la administración por parte de los refugios de los animales disponibles y las solicitudes de adopción recibidas.
 
 Para lograr estas funcionalidades, se han empleado diversas herramientas y tecnologías. El desarrollo de la aplicación Android se ha llevado a cabo utilizando Android Studio, permitiendo la creación de interfaces de usuario atractivas y la implementación de la lógica de la aplicación. Por otro lado, el backend de la aplicación se ha construido utilizando Spring Boot, lo que facilita la creación de servicios RESTful y la gestión de la lógica de negocio.
 
-Arquitectura de la Aplicación:
+## Arquitectura de la Aplicación
 
 La aplicación de adopción de animales, al consumir una API y utilizar una base de datos, se beneficia de la combinación de las arquitecturas de capas y ViewModel por las siguientes razones:
 
-Arquitectura de Capas: Un Diseño Modular y Escalable
+**Arquitectura de Capas:** Un Diseño Modular y Escalable
 
 La arquitectura de capas divide la aplicación en secciones independientes, cada una con una responsabilidad específica. Esto crea una estructura modular que facilita el desarrollo, la depuración y el mantenimiento.
 
-Capa de Presentación (UI): Se encarga de mostrar la información a los usuarios y de recibir sus interacciones.
+**Capa de Presentación (UI):** Se encarga de mostrar la información a los usuarios y de recibir sus interacciones.
 
-Capa de Lógica de Negocio (Business Logic): Se encarga de la lógica interna de la aplicación.
+**Capa de Lógica de Negocio (Business Logic):** Se encarga de la lógica interna de la aplicación.
 
-Capa de Acceso a Datos (Data Access): Se encarga de la comunicación con la API y la base de datos.
+**Capa de Acceso a Datos (Data Access):** Se encarga de la comunicación con la API y la base de datos.
 
-Capa de Datos: Contiene la base de datos local y la API.
+**Capa de Datos:** Contiene la base de datos local y la API.
 
-ViewModel: Gestión de la Lógica de Negocio y el Estado de la UI
+**ViewModel:** Gestión de la Lógica de Negocio y el Estado de la UI
 
 El patrón ViewModel se encarga de preparar los datos para la UI y de gestionar las acciones del usuario. Actúa como un intermediario entre la capa de presentación y la capa de lógica de negocio.
 
@@ -48,55 +64,55 @@ En conjunto, la combinación de la arquitectura de capas y el patrón ViewModel 
 
 Para lograr estas funcionalidades y asegurar la eficiencia del proyecto, se han empleado diversas herramientas y tecnologías.
 
-Funcionalidades del Proyecto:
+## Funcionalidades del Proyecto
 
-Registro y Autenticación de Usuarios: Los usuarios pueden registrarse e iniciar sesión en la aplicación como "Usuario Normal" o "Refugio".
+**Registro y Autenticación de Usuarios:** Los usuarios pueden registrarse e iniciar sesión en la aplicación como "Usuario Normal" o "Refugio".
 
-Perfil de Usuario: Cada usuario tiene un perfil donde puede ver y editar su información personal.
+**Perfil de Usuario:** Cada usuario tiene un perfil donde puede ver y editar su información personal.
 
-Adopción de Animales: Los usuarios normales pueden navegar por la lista de animales disponibles para adopción, ver detalles sobre cada animal y solicitar la adopción de uno o más animales.
+**Adopción de Animales:** Los usuarios normales pueden navegar por la lista de animales disponibles para adopción, ver detalles sobre cada animal y solicitar la adopción de uno o más animales.
 
-Administración de Animales por parte del Refugio: Los refugios pueden agregar nuevos animales a la lista de adopción, editar la información de los animales existentes y marcarlos como adoptados una vez que han encontrado un hogar.
+**Administración de Animales por parte del Refugio:** Los refugios pueden agregar nuevos animales a la lista de adopción, editar la información de los animales existentes y marcarlos como adoptados una vez que han encontrado un hogar.
 
-Gestión de Solicitudes de Adopción: Los refugios pueden revisar y gestionar las solicitudes de adopción recibidas, aceptando o rechazando las solicitudes según corresponda.
+**Gestión de Solicitudes de Adopción:** Los refugios pueden revisar y gestionar las solicitudes de adopción recibidas, aceptando o rechazando las solicitudes según corresponda.
 
-Tecnologías Utilizadas:
+## Tecnologías Utilizadas:
 
-Java: Lenguaje de programación utilizado para el desarrollo tanto de la aplicación Android como del backend.
+**Java:** Lenguaje de programación utilizado para el desarrollo tanto de la aplicación Android como del backend.
 
-Spring Boot: Framework de Java utilizado para desarrollar el backend de la aplicación, facilitando la creación de servicios RESTful y la gestión de la lógica de negocio.
+**Spring Boot:** Framework de Java utilizado para desarrollar el backend de la aplicación, facilitando la creación de servicios RESTful y la gestión de la lógica de negocio.
 
-IntelliJ IDEA: Entorno de desarrollo integrado (IDE) utilizado para escribir y depurar el código Java del backend.
+**IntelliJ IDEA:** Entorno de desarrollo integrado (IDE) utilizado para escribir y depurar el código Java del backend.
 
-Android Studio: Entorno de desarrollo utilizado para crear la aplicación Android, permitiendo el diseño de interfaces de usuario y la implementación de la lógica de la aplicación.
+**Android Studio:** Entorno de desarrollo utilizado para crear la aplicación Android, permitiendo el diseño de interfaces de usuario y la implementación de la lógica de la aplicación.
 
-Docker: Plataforma de contenedores utilizada para desplegar y gestionar la base de datos MySQL de manera eficiente y portátil.
+**Docker:** Plataforma de contenedores utilizada para desplegar y gestionar la base de datos MySQL de manera eficiente y portátil.
 
-MySQL: Sistema de gestión de bases de datos utilizado para almacenar la información de los usuarios, los animales disponibles para adopción y las solicitudes de adopción.
+**MySQL:** Sistema de gestión de bases de datos utilizado para almacenar la información de los usuarios, los animales disponibles para adopción y las solicitudes de adopción.
 
-DBeaver: Herramienta de gestión de bases de datos utilizada para interactuar con la base de datos MySQL, facilitando el diseño de esquemas de bases de datos y la ejecución de consultas SQL.
+**DBeaver:** Herramienta de gestión de bases de datos utilizada para interactuar con la base de datos MySQL, facilitando el diseño de esquemas de bases de datos y la ejecución de consultas SQL.
 
-Postman: Herramienta utilizada para probar y depurar los servicios RESTful del backend, permitiendo realizar solicitudes HTTP y analizar las respuestas.
+**Postman:** Herramienta utilizada para probar y depurar los servicios RESTful del backend, permitiendo realizar solicitudes HTTP y analizar las respuestas.
 
-GitHub: Plataforma de desarrollo colaborativo utilizada para almacenar y gestionar el código fuente del proyecto, facilitando la colaboración entre los miembros del equipo y el control de versiones del código.
+**GitHub:** Plataforma de desarrollo colaborativo utilizada para almacenar y gestionar el código fuente del proyecto, facilitando la colaboración entre los miembros del equipo y el control de versiones del código.
 
-Herramientas Utilizadas:
+## Herramientas Utilizadas
 
-Figma: Herramienta de diseño colaborativo utilizada para crear y compartir prototipos de interfaz de usuario.
+**Figma:** Herramienta de diseño colaborativo utilizada para crear y compartir prototipos de interfaz de usuario.
 
-Generador de Paletas de Colores: Página web utilizada para generar paletas de colores para el diseño de la interfaz de usuario.
+**Generador de Paletas de Colores:** Página web utilizada para generar paletas de colores para el diseño de la interfaz de usuario.
 
-Canvas: Plataforma de aprendizaje en línea utilizada para crear contenido interactivo y actividades.
+**Canvas:** Plataforma de aprendizaje en línea utilizada para crear contenido interactivo y actividades.
 
 ---------------------------------
 
-Enlace a figma de la interfaz.
+## Enlace a figma de la interfaz
 
 https://www.figma.com/design/dJrNwrjCegRQ6uRQK4F03E/Simbad?node-id=1-2&t=tFolHPhYNd93cXw1-1
 
 ---------------------------------
 
-Conclusión
+## Conclusión
 
 En resumen, el desarrollo de este Trabajo de Fin de Grado ha sido una experiencia de aprendizaje invaluable para mí. A través de la aplicación práctica de los conceptos teóricos adquiridos durante mi formación académica, he logrado comprender en profundidad diversos aspectos relacionados con el diseño, desarrollo y despliegue de aplicaciones móviles.
 
@@ -108,7 +124,7 @@ En conclusión, este Trabajo de Fin de Grado ha sido una etapa significativa en 
 
 ---------------------------------
 
-Agradecimientos
+## Agradecimientos
 
 Quiero expresar mi sincero agradecimiento a mi familia, amigos y compañeros de clase por su constante apoyo y aliento durante la realización de este Trabajo de Fin de Grado.
 
